@@ -1,0 +1,19 @@
+﻿@using System.Configuration
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<form action="/Home/CreateCheckoutSession" method="POST">
+    <input type="text" id="TextBox1" placeholder="amount" name="amount" /><br />
+    <input type="text" id="txtemial" placeholder="email" name="email" /><br />
+    <input type="number" id="txtcard" placeholder="Card Number" name="cardnum" /><br />
+    <input type="date" id="txtdate" placeholder="Expiry date" name="expirydate" /><br />
+    <input type="number" id="txtcode" placeholder="Security code" name="cvv" /><br />
+    <input type="number" id="txtpin" placeholder="Post / zip code" name="zippin" /><br />
+    <input type="number" id="initialpay" placeholder="Initial payment amount" name="initialpay" /><br />
+    <input type="number" id="recpay" placeholder="Recurring payment amount" name="recpay" /><br />
+    <input type="number" id="numrec" placeholder="Number of recurring payments" name="numrec" /><br />
+    <button type="submit">Checkout</button>
+</form>
+
